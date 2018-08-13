@@ -1,4 +1,4 @@
-
+/*https://www.geeksforgeeks.org/static-vs-dynamic-binding-in-java/*/
 public class DynamicClass
 {
     public static class superclass
