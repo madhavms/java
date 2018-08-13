@@ -1,5 +1,5 @@
 /*https://www.geeksforgeeks.org/static-vs-dynamic-binding-in-java/*/
-public class NewClass
+public class StaticClass
 {
 
   public static class superclass
