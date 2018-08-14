@@ -14,6 +14,22 @@ Circle circle = new Circle(6.87);
     System.out.println("Circumference = " + circle.calculateCircumferenceOfCircle());
 }
 }
+class Circle
+{
+double radius;
+static final double pi=Math.PI;
+
+Circle(double radius){
+    this.radius = radius;
+}
+double calculateAreaOfCircle(){
+	NumberFormat numberFormatter = new DecimalFormat("#0.000000000");
+    return Double.parseDouble(numberFormatter.format(pi*radius*radius));
+}
+double calculateCircumferenceOfCircle(){
+	NumberFormat numberFormatter = new DecimalFormat("#0.00");
+    return Double.parseDouble(numberFormatter.format(2*pi*radius));
+}
 
 class Rectangle
 {
@@ -32,20 +48,5 @@ double calculatePerimeterOfRectangle(){
 }
 }
 
-class Circle
-{
-double radius;
-static final double pi=Math.PI;
 
-Circle(double radius){
-    this.radius = radius;
-}
-double calculateAreaOfCircle(){
-	NumberFormat numberFormatter = new DecimalFormat("#0.000000000");
-    return Double.parseDouble(numberFormatter.format(pi*radius*radius));
-}
-double calculateCircumferenceOfCircle(){
-	NumberFormat numberFormatter = new DecimalFormat("#0.00");
-    return Double.parseDouble(numberFormatter.format(2*pi*radius));
-}
 }
