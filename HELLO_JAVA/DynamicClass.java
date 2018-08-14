@@ -2,7 +2,7 @@
 public class DynamicClass
 {
     public static class superclass
-    {
+    {int i=1;
         void print()
         {
             System.out.println("print in superclass.");
@@ -10,8 +10,8 @@ public class DynamicClass
     }
 
     public static class subclass extends superclass
-    {
-        @Override
+    {int i=2;
+        
         void print()
         {
             System.out.println("print in subclass.");
@@ -22,6 +22,8 @@ public class DynamicClass
     {
         superclass A = new superclass();
         superclass B = new subclass();
+        System.out.println("Value of i in A is 1:"+A.i);
+        System.out.println("Value of i in B is 2:"+B.i);
         A.print();
         B.print();
     }

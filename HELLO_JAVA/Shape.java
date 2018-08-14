@@ -7,18 +7,17 @@ public abstract double perimeter();
 public static void main(String[] args) {
   System.out.println("Enter your choice");
   System.out.println("1.Rectangle | 2.Circle")
-  Scanner reader1=new Scanner(System.in);
-  Scanner reader2=new Scanner(System.in);
-  Scanner reader3=new Scanner(System.in);
-  input1=reader1.nextInt();
+  Scanner in=new Scanner(System.in);
+
+  input1=in.nextInt();
 
 
   switch(input){
   case 1:System.out.println("Enter the length:");
-        input2=reader2.nextInt();
+        input2=in.double();
          System.out.println("Enter the width:");
-         input3=reader3.nextInt();
-         Shape.Rectangle(input3,input2)
+         input3=reader3.next();
+         Shape.Rectangle(input3,input2);
   }
 
 }
